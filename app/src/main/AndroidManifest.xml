@@ -15,8 +15,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ForSpinner"></activity>
-        <activity android:name=".RcPme"></activity>
+        <activity android:name=".inbox.inbox"></activity>
+        <activity android:name=".ForSpinner" />
+        <activity android:name=".RcPme" />
         <activity android:name=".UpdateMain">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,8 +25,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Sumith"></activity>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".Sumith" />
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

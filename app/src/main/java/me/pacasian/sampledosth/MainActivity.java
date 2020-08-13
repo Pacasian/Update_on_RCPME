@@ -15,6 +15,8 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
+import me.pacasian.sampledosth.inbox.inbox;
+
 public class MainActivity extends AppCompatActivity {
 LinearLayout l_inbox,l_grievance,l_bio;
 TextView txt_inbox,txt_grievance,txt_bio;
@@ -49,7 +51,7 @@ TextView txt_inbox,txt_grievance,txt_bio;
     l_inbox.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            startActivity(new Intent(MainActivity.this,Sumith.class));
+            startActivity(new Intent(MainActivity.this, inbox.class));
             txt_inbox.setVisibility(View.INVISIBLE);
         }
     });

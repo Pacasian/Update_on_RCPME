@@ -247,7 +247,7 @@ Button btn_filter;
                         year=year.trim();
                     }
                     String yearMonthFormat=year+"-"+stMonth;
-                    String query = "SELECT * FROM pmeRc where  "+st_rc_or_pme+" like '"+yearMonthFormat+"%';";
+                    String query = "SELECT * FROM pmeRc where  "+st_rc_or_pme+"  like '"+yearMonthFormat+"%';";
                     Statement stmt = con.createStatement();
                     ResultSet rs = stmt.executeQuery(query);
                     if (rs != null) // if resultset not null, I add items to itemArraylist using class created
