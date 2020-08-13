@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="match_parent"
+    android:weightSum="3"
+    android:gravity="center"
+    tools:context=".MainActivity"
+    android:baselineAligned="false">
+
+
+
+    <LinearLayout
+        android:id="@+id/bio"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:background="?attr/selectableItemBackgroundBorderless">
+<LinearLayout
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+    android:orientation="horizontal"
+    android:layout_gravity="center"
+    android:layout_marginTop="5dp">
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bio"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"/>
+    <TextView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+       android:id="@+id/txt_note_bio"
+        android:visibility="invisible"
+        android:layout_marginStart="-5dp"
+        android:paddingTop="-15dp"
+        android:background="@drawable/sample_circle"
+        android:textColor="#fff"
+        android:text="@string/astricks"
+        android:textStyle="bold"
+        android:gravity="center_vertical|center_horizontal"/>
+</LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="BioData"
+        android:textAlignment="center"
+        android:textSize="17sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/grievance"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:layout_weight="1"
+        android:focusable="true"
+        android:layout_marginRight="10dp"
+        android:background="?attr/selectableItemBackgroundBorderless">
+
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/grievances"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginStart="-5dp"
+                android:background="@drawable/sample_circle"
+                android:textColor="#fff"
+               android:id="@+id/txt_note_gri"
+                android:visibility="invisible"
+                android:text="@string/astricks"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
+        </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Grievance "
+        android:textAlignment="center"
+        android:textSize="17sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/inbox"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:layout_weight="1"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackgroundBorderless">
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/inbox"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginStart="-5dp"
+                android:background="@drawable/sample_circle"
+                android:textColor="#fff"
+               android:id="@+id/txt_note_inbox"
+                android:visibility="invisible"
+                android:text="@string/astricks"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
+        </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      
+        android:text="Inbox"
+        android:textAlignment="center"
+        android:textSize="17sp" />
+</LinearLayout>
+</LinearLayout>
